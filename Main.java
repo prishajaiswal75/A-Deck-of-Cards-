@@ -32,3 +32,15 @@ public class Main {
                 case 3:
                     deck.dealCard();
                     break;
+                case 4:
+                    System.out.print("Enter Rank: ");
+                    String rank = scanner.nextLine();
+                    System.out.print("Enter Suit: ");
+                    String suit = scanner.nextLine();
+                    boolean found = deck.findCard(rank, suit);
+                    if (found) {
+                        System.out.println("Card is in the deck.");
+                    } else {
+                        System.out.println("Card is not in the deck.");
+                    }
+                    break;
