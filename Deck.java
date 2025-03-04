@@ -28,4 +28,8 @@ class Deck {
         }
     }
 
+    // Prints a single card
+    public void printCard(Card card) {
+        System.out.println(card);
+    }
 
