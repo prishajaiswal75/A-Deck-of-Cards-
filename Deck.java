@@ -84,3 +84,19 @@ class Deck {
         System.out.println("Random Card 1: " + deck.get(0));
         System.out.println("Random Card 2: " + deck.get(1));
     }
+
+    // Distributes 5 cards to 3 players
+    public void cardPlayers() {
+        if (deck.size() < 15) {
+            System.out.println("Not enough cards to deal to players.");
+            return;
+        }
+        for (int i = 1; i <= 3; i++) {
+            System.out.println("Player " + i + "'s cards:");
+            for (int j = 0; j < 5; j++) {
+                System.out.println(deck.remove(0));
+            }
+            System.out.println();
+        }
+    }
+}
