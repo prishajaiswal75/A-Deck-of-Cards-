@@ -44,3 +44,8 @@ public class Main {
                         System.out.println("Card is not in the deck.");
                     }
                     break;
+                case 5:
+                    System.out.print("Enter Suit: ");
+                    String suitSearch = scanner.nextLine();
+                    deck.sameCard(suitSearch);
+                    break;
