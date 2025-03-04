@@ -54,3 +54,19 @@ public class Main {
                     String rankSearch = scanner.nextLine();
                     deck.compareCard(rankSearch);
                     break;
+                case 7:
+                    deck.randomCards();
+                    break;
+                case 8:
+                    deck.cardPlayers();
+                    break;
+                case 9:
+                    System.out.println("Exiting program.");
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("Invalid choice! Please enter a valid option.");
+            }
+        }
+    }
+}
