@@ -29,3 +29,6 @@ public class Main {
                 case 2:
                     deck.shuffleDeck();
                     break;
+                case 3:
+                    deck.dealCard();
+                    break;
