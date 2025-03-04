@@ -26,3 +26,6 @@ public class Main {
                 case 1:
                     deck.printDeck();
                     break;
+                case 2:
+                    deck.shuffleDeck();
+                    break;
