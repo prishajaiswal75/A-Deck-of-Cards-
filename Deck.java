@@ -68,3 +68,12 @@ class Deck {
         }
         return false;
     }
+
+    // Deals 5 random cards
+    public void dealCard() {
+        shuffleDeck();
+        System.out.println("Dealing 5 random cards:");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(deck.remove(0));
+        }
+    }
