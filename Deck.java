@@ -77,3 +77,10 @@ class Deck {
             System.out.println(deck.remove(0));
         }
     }
+
+    // Prints 2 random cards from the deck
+    public void randomCards() {
+        shuffleDeck();
+        System.out.println("Random Card 1: " + deck.get(0));
+        System.out.println("Random Card 2: " + deck.get(1));
+    }
