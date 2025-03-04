@@ -49,3 +49,8 @@ public class Main {
                     String suitSearch = scanner.nextLine();
                     deck.sameCard(suitSearch);
                     break;
+                case 6:
+                    System.out.print("Enter Rank: ");
+                    String rankSearch = scanner.nextLine();
+                    deck.compareCard(rankSearch);
+                    break;
